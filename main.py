@@ -13,4 +13,7 @@ df = pd.DataFrame({
   '2列目': [10, 20, 30, 40]
 })
 # DataFrameの表示(最大値にハイライト)
-st.dataframe(df.style.highlight_max(axis=0))
+# st.dataframe(df.style.highlight_max(axis=0))
+
+# 表の表示
+st.table(df.style.highlight_max(axis=0))
