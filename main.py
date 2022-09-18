@@ -17,3 +17,17 @@ df = pd.DataFrame({
 
 # 表の表示
 st.table(df.style.highlight_max(axis=0))
+
+# マークダウンの表示
+"""
+# 章
+## 節
+### 項
+
+```python
+import streamlit as st
+import numpy as np
+import pandas as pd
+
+```
+"""
