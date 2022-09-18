@@ -1,12 +1,18 @@
 import streamlit as st
 import numpy as np
 import pandas as pd
+from PIL import Image
 
 # タイトルの表示
 st.title('Streamlit 超入門')
 
 # テキストの表示
-st.write('DataFrame')
+st.write('Display Image')
+
+# 画像の読み込み
+img = Image.open('icon.png')
+# 画像の表示
+st.image(img, caption='柴犬', use_column_width=False)
 
 df = pd.DataFrame(
   # 2列100行の乱数を生成
