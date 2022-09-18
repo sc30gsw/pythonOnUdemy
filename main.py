@@ -26,5 +26,9 @@ st.write('Interactive Widgets')
 # 'あなたの好きな数字は、', option, 'です。'
 
 # テキストボックスの表示
-text= st.text_input('あなたの趣味を教えてください')
-'あなたの趣味:', text
+# text= st.text_input('あなたの趣味を教えてください')
+# 'あなたの趣味:', text
+
+# スライダーの表示
+condition = st.slider('あなたの今の調子は?', 0, 100, 50)
+'コンディション:', condition
