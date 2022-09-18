@@ -9,12 +9,13 @@ st.title('Streamlit 超入門')
 st.write('DataFrame')
 
 df = pd.DataFrame(
-  # 3列20行の乱数を生成
-  np.random.rand(20, 3),
-  columns=['a', 'b', 'c']
+  # 2列100行の乱数を生成
+  np.random.rand(100, 2) / [50, 50] + [35.69, 139.70],
+  # 緯度・経度
+  columns=['lat', 'lon']
 )
 # DataFrameの表示(最大値にハイライト)
 # st.dataframe(df.style.highlight_max(axis=0))
 
-# 折れ線グラフの表示
-st.line_chart(df)
+# 地図の表示
+st.map(df)
